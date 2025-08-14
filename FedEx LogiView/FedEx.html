@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Logística</title>
+    <link rel="stylesheet" href="FedEx.css">
+</head>
+<body>
+    <header> 
+        <img class="imagemheader" src="https://tse1.mm.bing.net/th/id/OIP.R0PHPsk4cblq8j6WcPZxpwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Logo da empresa">
+        <h1 class="painel">Painel de Logística</h1>
+    </header>
+
+    <!-- SEÇÃO A: CARDS RESUMO -->
+    <div class="cards-container"> 
+        <div class="card1">
+            <h2>Remessas Ativas</h2>
+            <p class="numero1">1.248</p>
+            <span>Total em andamento no momento</span>
+        </div>
+        <div class="card2">
+            <h2>Entregas Hoje</h2>
+            <p class="numero2">327</p>
+            <span>Concluídas com sucesso</span>
+        </div>
+        <div class="card3">
+            <h2>Entregas Atrasadas</h2>
+            <p class="numero3">56</p>
+            <span>Aguardando solução</span>
+        </div>
+    </div>
+
+    <!-- SEÇÃO B: TIMELINE -->
+    <div class="timeline-section">
+        <h2>Status de Remessas</h2>
+        <div class="timeline">
+            <!-- Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-icon">🚚</div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="shipment-id">#12345</span>
+                        <span class="status-badge em-transito">Em Trânsito</span>
+                    </div>
+                    <div class="route">São Paulo, SP → Recife, PE</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%"></div>
+                        <span class="progress-text">70%</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-icon">✈️</div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="shipment-id">#67890</span>
+                        <span class="status-badge atrasada">Atrasada</span>
+                    </div>
+                    <div class="route">Miami → Brasília</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 40%"></div>
+                        <span class="progress-text">40%</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-icon">🚢</div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="shipment-id">#11223</span>
+                        <span class="status-badge entregue">Entregue</span>
+                    </div>
+                    <div class="route">Lisboa → Fortaleza</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 100%"></div>
+                        <span class="progress-text">100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO C: ALERTAS E NOTIFICAÇÕES -->
+    <div class="notifications-section">
+        <h2>Alertas <span class="notification-badge">3</span></h2>
+        <div class="notification-list">
+            <div class="notification-item warning">
+                <div class="notification-icon">⚠️</div>
+                <div class="notification-text">Remessa #45678 com atraso devido ao tráfego intenso</div>
+            </div>
+            <div class="notification-item info">
+                <div class="notification-icon">ℹ️</div>
+                <div class="notification-text">Verifique a documentação da Remessa #90123</div>
+            </div>
+            <div class="notification-item alert">
+                <div class="notification-icon">🚨</div>
+                <div class="notification-text">Remessa #77889 parou em centro de distribuição não previsto</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ATUALIZAÇÕES -->
+    <div class="updates-section">
+        <h2>Atualizações Operacionais <span class="update-badge">2</span></h2>
+        <div class="updates-list">
+            <div class="update-item info">
+                <div class="update-icon">🔄</div>
+                <div class="update-text">Sistema de rastreamento será atualizado hoje às 23h (horário de Brasília)</div>
+            </div>
+            <div class="update-item warning">
+                <div class="update-icon">🚧</div>
+                <div class="update-text">Interrupção programada na rota SP-RJ devido a obras na BR-116 (15-17/08)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REQUISIÇÕES PENDENTES -->
+    <div class="requests-section">
+        <h2>Requisições Pendentes <span class="request-badge">3</span></h2>
+        <div class="requests-list">
+            <div class="request-item">
+                <div class="request-icon">✏️</div>
+                <div class="request-text">Cliente solicita alteração de endereço para remessa #33456</div>
+            </div>
+            <div class="request-item">
+                <div class="request-icon">🕒</div>
+                <div class="request-text">Solicitação de coleta adicional para amanhã - Aguardando confirmação</div>
+            </div>
+            <div class="request-item">
+                <div class="request-icon">📦</div>
+                <div class="request-text">Pedido de embalagem especial para remessa frágil #77889</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENTREGAS CRÍTICAS -->
+    <div class="critical-section">
+        <h2>Entregas Críticas <span class="critical-badge">3</span></h2>
+        <div class="critical-list">
+            <div class="critical-item medical">
+                <div class="critical-icon">💊</div>
+                <div class="critical-content">
+                    <div class="critical-title">Remessa Médica Urgente</div>
+                    <div class="critical-desc">Vacinas COVID-19 - Validade: 18/08</div>
+                    <div class="critical-id">#MED-4456</div>
+                </div>
+            </div>
+            <div class="critical-item legal">
+                <div class="critical-icon">⚖️</div>
+                <div class="critical-content">
+                    <div class="critical-title">Documentos Jurídicos</div>
+                    <div class="critical-desc">Prazo judicial: 16/08 - Entrega com AR</div>
+                    <div class="critical-id">#JUR-8890</div>
+                </div>
+            </div>
+            <div class="critical-item corporate">
+                <div class="critical-icon">🏢</div>
+                <div class="critical-content">
+                    <div class="critical-title">Material para Evento</div>
+                    <div class="critical-desc">Convenção anual - Chegar antes de 15/08 08h</div>
+                    <div class="critical-id">#EVT-1122</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALERTAS DE SEGURANÇA -->
+    <div class="fraude-section">
+        <h2>Alertas de Segurança <span class="badge">3</span></h2>
+        <div class="fraude-item critical">
+            <div class="fraude-icon">🚨</div>
+            <div class="fraude-content">
+                <h3>Tentativa de Phishing Detectada</h3>
+                <p>E-mails falsos solicitando informações de conta foram identificados com remetente "fedexcourierserviceonline.co.uk.tt"</p>
+                <div class="fraude-meta">
+                    <span class="tag">Crítico</span>
+                    <span class="date">14/08/2025</span>
+                </div>
+            </div>
+        </div>
+        <div class="fraude-item warning">
+            <div class="fraude-icon">⚠️</div>
+            <div class="fraude-content">
+                <h3>Padrão de Solicitação de Pagamento Imediato</h3>
+                <p>5 clientes reportaram cobranças urgentes para liberação de pacotes</p>
+                <div class="fraude-meta">
+                    <span class="tag">Alerta</span>
+                    <span class="date">13/08/2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOCUMENTAÇÃO -->
+    <div class="docs-section">
+        <h2>Problemas de Documentação</h2>
+        <div class="docs-problem">
+            <div class="docs-header">
+                <span class="docs-code">#DOC-789</span>
+                <span class="docs-status em-transito">Pendente</span>
+            </div>
+            <p class="docs-desc">Documento inválido para remessa #44521 - incompatibilidade entre chamada inicial e envio real</p>
+            <div class="docs-actions">
+                <button class="btn-small">Verificar ETD</button>
+                <button class="btn-small outline">Contatar Cliente</button>
+            </div>
+        </div>
+        <div class="docs-problem">
+            <div class="docs-header">
+                <span class="docs-code">#DOC-790</span>
+                <span class="docs-status atrasada">Urgente</span>
+            </div>
+            <p class="docs-desc">Fatura comercial ausente para remessa internacional #77832</p>
+            <div class="docs-actions">
+                <button class="btn-small">Solicitar Documento</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ERROS DE PROCESSAMENTO -->
+    <div class="errors-section">
+        <h2>Erros de Processamento</h2>
+        <div class="error-item">
+            <div class="error-type">Dimensões Excedidas</div>
+            <div class="error-details">
+                <span>Pacote #2 da remessa #99123</span>
+                <span>Limite de comprimento e perímetro excedido</span>
+            </div>
+            <div class="error-solution">
+                <a href="#">Ver diretrizes de pacotes</a>
+            </div>
+        </div>
+        <div class="error-item">
+            <div class="error-type">Peso Inválido</div>
+            <div class="error-details">
+                <span>Remessa #45678</span>
+                <span>Peso total das commodities maior que o peso do pacote</span>
+            </div>
+            <div class="error-solution">
+                <button class="btn-small">Ajustar Peso</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <p>Leandro Batista &copy; 2025</p>
+        <p>Desenvolvedor Front-End</p>
+        <p>Tecnologias utilizadas: HTML, CSS</p>
+    </div>
+</footer>
+
+</body>
+</html>
