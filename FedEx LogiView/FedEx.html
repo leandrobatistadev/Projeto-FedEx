@@ -35,8 +35,7 @@
     <div class="timeline-section">
         <h2>Status de Remessas</h2>
         <div class="timeline">
-            <!-- Item 1 -->
-            <div class="timeline-item">
+            <div class="timeline-item em-transito">
                 <div class="timeline-icon">🚚</div>
                 <div class="timeline-content">
                     <div class="timeline-header">
@@ -50,8 +49,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Item 2 -->
-            <div class="timeline-item">
+            <div class="timeline-item atrasada">
                 <div class="timeline-icon">✈️</div>
                 <div class="timeline-content">
                     <div class="timeline-header">
@@ -65,10 +63,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Item 3 -->
-            <div class="timeline-item">
-                <div class="timeline-icon">🚢</div>
-                <div class="timeline-content">
+            <div class="timeline-item entregue">
+                <div class="timeline-icon entregue-icon">✅</div>
+                <div class="timeline-content entregue-content">
                     <div class="timeline-header">
                         <span class="shipment-id">#11223</span>
                         <span class="status-badge entregue">Entregue</span>
@@ -87,15 +84,15 @@
     <div class="notifications-section">
         <h2>Alertas <span class="notification-badge">3</span></h2>
         <div class="notification-list">
-            <div class="notification-item warning">
+            <div class="notification-item warning card-wave">
                 <div class="notification-icon">⚠️</div>
                 <div class="notification-text">Remessa #45678 com atraso devido ao tráfego intenso</div>
             </div>
-            <div class="notification-item info">
+            <div class="notification-item info card-shadow">
                 <div class="notification-icon">ℹ️</div>
                 <div class="notification-text">Verifique a documentação da Remessa #90123</div>
             </div>
-            <div class="notification-item alert">
+            <div class="notification-item alert card-glow">
                 <div class="notification-icon">🚨</div>
                 <div class="notification-text">Remessa #77889 parou em centro de distribuição não previsto</div>
             </div>
@@ -105,12 +102,12 @@
     <!-- ATUALIZAÇÕES -->
     <div class="updates-section">
         <h2>Atualizações Operacionais <span class="update-badge">2</span></h2>
-        <div class="updates-list">
-            <div class="update-item info">
+        <div class="updates-list updates-different">
+            <div class="update-item info pulse">
                 <div class="update-icon">🔄</div>
                 <div class="update-text">Sistema de rastreamento será atualizado hoje às 23h (horário de Brasília)</div>
             </div>
-            <div class="update-item warning">
+            <div class="update-item warning spin">
                 <div class="update-icon">🚧</div>
                 <div class="update-text">Interrupção programada na rota SP-RJ devido a obras na BR-116 (15-17/08)</div>
             </div>
@@ -120,16 +117,16 @@
     <!-- REQUISIÇÕES PENDENTES -->
     <div class="requests-section">
         <h2>Requisições Pendentes <span class="request-badge">3</span></h2>
-        <div class="requests-list">
-            <div class="request-item">
+        <div class="requests-list requests-grid">
+            <div class="request-item card-tilt">
                 <div class="request-icon">✏️</div>
                 <div class="request-text">Cliente solicita alteração de endereço para remessa #33456</div>
             </div>
-            <div class="request-item">
+            <div class="request-item card-tilt">
                 <div class="request-icon">🕒</div>
                 <div class="request-text">Solicitação de coleta adicional para amanhã - Aguardando confirmação</div>
             </div>
-            <div class="request-item">
+            <div class="request-item card-tilt">
                 <div class="request-icon">📦</div>
                 <div class="request-text">Pedido de embalagem especial para remessa frágil #77889</div>
             </div>
@@ -137,10 +134,10 @@
     </div>
 
     <!-- ENTREGAS CRÍTICAS -->
-    <div class="critical-section">
+    <div class="critical-section critical-grid">
         <h2>Entregas Críticas <span class="critical-badge">3</span></h2>
         <div class="critical-list">
-            <div class="critical-item medical">
+            <div class="critical-item medical card-pop">
                 <div class="critical-icon">💊</div>
                 <div class="critical-content">
                     <div class="critical-title">Remessa Médica Urgente</div>
@@ -148,7 +145,7 @@
                     <div class="critical-id">#MED-4456</div>
                 </div>
             </div>
-            <div class="critical-item legal">
+            <div class="critical-item legal card-pop">
                 <div class="critical-icon">⚖️</div>
                 <div class="critical-content">
                     <div class="critical-title">Documentos Jurídicos</div>
@@ -156,7 +153,7 @@
                     <div class="critical-id">#JUR-8890</div>
                 </div>
             </div>
-            <div class="critical-item corporate">
+            <div class="critical-item corporate card-pop">
                 <div class="critical-icon">🏢</div>
                 <div class="critical-content">
                     <div class="critical-title">Material para Evento</div>
@@ -168,9 +165,9 @@
     </div>
 
     <!-- ALERTAS DE SEGURANÇA -->
-    <div class="fraude-section">
+    <html class="fraude-section fraud-style">
         <h2>Alertas de Segurança <span class="badge">3</span></h2>
-        <div class="fraude-item critical">
+        <div class="fraude-item critical card-glow2">
             <div class="fraude-icon">🚨</div>
             <div class="fraude-content">
                 <h3>Tentativa de Phishing Detectada</h3>
@@ -181,77 +178,15 @@
                 </div>
             </div>
         </div>
-        <div class="fraude-item warning">
-            <div class="fraude-icon">⚠️</div>
-            <div class="fraude-content">
-                <h3>Padrão de Solicitação de Pagamento Imediato</h3>
-                <p>5 clientes reportaram cobranças urgentes para liberação de pacotes</p>
-                <div class="fraude-meta">
-                    <span class="tag">Alerta</span>
-                    <span class="date">13/08/2025</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- DOCUMENTAÇÃO -->
-    <div class="docs-section">
-        <h2>Problemas de Documentação</h2>
-        <div class="docs-problem">
-            <div class="docs-header">
-                <span class="docs-code">#DOC-789</span>
-                <span class="docs-status em-transito">Pendente</span>
-            </div>
-            <p class="docs-desc">Documento inválido para remessa #44521 - incompatibilidade entre chamada inicial e envio real</p>
-            <div class="docs-actions">
-                <button class="btn-small">Verificar ETD</button>
-                <button class="btn-small outline">Contatar Cliente</button>
-            </div>
-        </div>
-        <div class="docs-problem">
-            <div class="docs-header">
-                <span class="docs-code">#DOC-790</span>
-                <span class="docs-status atrasada">Urgente</span>
-            </div>
-            <p class="docs-desc">Fatura comercial ausente para remessa internacional #77832</p>
-            <div class="docs-actions">
-                <button class="btn-small">Solicitar Documento</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- ERROS DE PROCESSAMENTO -->
-    <div class="errors-section">
-        <h2>Erros de Processamento</h2>
-        <div class="error-item">
-            <div class="error-type">Dimensões Excedidas</div>
-            <div class="error-details">
-                <span>Pacote #2 da remessa #99123</span>
-                <span>Limite de comprimento e perímetro excedido</span>
-            </div>
-            <div class="error-solution">
-                <a href="#">Ver diretrizes de pacotes</a>
-            </div>
-        </div>
-        <div class="error-item">
-            <div class="error-type">Peso Inválido</div>
-            <div class="error-details">
-                <span>Remessa #45678</span>
-                <span>Peso total das commodities maior que o peso do pacote</span>
-            </div>
-            <div class="error-solution">
-                <button class="btn-small">Ajustar Peso</button>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-    <div class="footer-content">
-        <p>Leandro Batista &copy; 2025</p>
-        <p>Desenvolvedor Front-End</p>
-        <p>Tecnologias utilizadas: HTML, CSS</p>
+       <footer class="footer-3d-full">
+    <div class="footer-container">
+        <p class="footer-name">Leandro Batista &copy; 2025</p>
+        <p class="footer-role">Desenvolvedor Front-End</p>
+        <p class="footer-tech">Tecnologias utilizadas: HTML, CSS</p>
     </div>
 </footer>
 
 </body>
 </html>
+
+        
